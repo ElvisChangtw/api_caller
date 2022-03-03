@@ -1,0 +1,26 @@
+server:
+  port : 8088
+feign:
+  httpclient:
+    enabled: true
+#  client:
+#    config:
+#      userDataService:
+#        logger-level: full
+
+#logging:
+#  level:
+#    com.client.client: DEBUG
+
+#最大連線數
+http:
+  maxTotal: 100
+#併發數
+  defaultMaxPerRoute: 20
+#建立連線的最長時間
+  connectTimeout: 1000
+#從連線池中獲取到連線的最長時間
+  connectionRequestTimeout: 500
+#資料傳輸的最長時間
+  socketTimeout: 10000
+  validateAfterInactivity: 1000
